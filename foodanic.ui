@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1591</width>
+    <height>903</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Foodanic</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+background-color: rgb(52, 53, 65)
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 53, 65)
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>331</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>17</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Welcome to Foodanic v0.1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>10</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Culinary Journeys Awaits...</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>100</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comboBox{
+border: 1px solid #ced4da;
+border-radius: 4px;
+padding-left: 10px;
+color: #fff
+} 
+
+#comboBox::drop{
+border: 0px
+
+
+} </string>
+    </property>
+    <item>
+     <property name="text">
+      <string>indian_foods.csv</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>coming soon...</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Choose dataset: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>To receive meal recommendations, please select from the following options:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Vegetarian</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Diet</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Non-Vegetarian</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string> Flavor Palate</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Sweet</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Spicy</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Bitter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Course	</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Dessert</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Snack</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>590</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Main Course</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Prep Time</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>670</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Less than 5 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>750</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>15 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>790</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>30 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>710</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>5-10 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>830</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>More than 30 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>200</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Cook time</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_14">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>230</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>5-10 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_15">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>15 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_16">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>310</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>30 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_17">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>390</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>More than 60 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_18">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>350</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>60 minutes  </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>420</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Region</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_19">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>470</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>North</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_20">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>550</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>South</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_21">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>510</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>North-East</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_22">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>590</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>West</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_23">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>630</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+font-size: 18px;
+border-radius: 4px;
+
+QCheckBox::indicator{
+width: 25px;
+heigh: 25px;
+};
+
+QCheckBox::hover{
+	color: #B31031;
+};
+
+QCheckBox::indicator:unchecked{
+image: url(:/checkbox/unchecked.png);
+} ;
+
+
+QCheckBox::indicator:checked{
+image: url(:/checkbox/checkmark.png);
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>East</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>700</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#fff;
+border-radius: 10px</string>
+    </property>
+    <property name="text">
+     <string>Generate Recommendations</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>760</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#fff;
+border-radius: 10px</string>
+    </property>
+    <property name="text">
+     <string>Clear Selection</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>90</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Recipie Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>190</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Recipie Ingredients</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>130</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>230</y>
+      <width>641</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>320</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>State of Origin</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>360</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>320</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Flavor Profile</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>360</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>410</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Prep time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>460</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>410</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff</string>
+    </property>
+    <property name="text">
+     <string>Cook time</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>460</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>520</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#fff;
+border-radius: 10px</string>
+    </property>
+    <property name="text">
+     <string>Clear Results</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>520</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#fff;
+border-radius: 10px</string>
+    </property>
+    <property name="text">
+     <string>Generate Recipie</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>580</y>
+      <width>641</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 54, 60);
+border: 2px solid white;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: #fff</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>850</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#fff;
+border-radius: 10px</string>
+    </property>
+    <property name="text">
+     <string>Copy Recipie</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>0</y>
+      <width>55</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/gpt.png&quot; width=&quot;50&quot; height=&quot;50&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
